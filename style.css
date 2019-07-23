@@ -202,10 +202,12 @@ a.article:hover {
 
 
 .fileInput{
-    width: 10rem;
+    width: 5rem;
 }
 
-
+.contact{
+    width: 100%;
+}
 
 .slidecontainer {
   width: 100%; /* Width of the outside container */
