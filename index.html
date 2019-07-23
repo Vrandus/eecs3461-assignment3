@@ -124,16 +124,17 @@
   <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
 </div>		
 				
-				<hr>
-                    </button>
-								                    <button type="button"  class="btn btn-primary">
+                <hr> 
+                <input type="file" class="fileInput" onchange="loadCanvas(event)">
+					<button onClick="createCanvas()" type="button"  class="btn btn-primary">
+                        
                         <i class="fas fa-align-left"></i>
-                        <span>export</span>
+                        <span>import</span>
                     </button>
                     </button>
 								                    <button type="button"  class="btn btn-primary" id = "import">
                         <i class="fas fa-align-left"></i>
-                        <span>import</span>
+                        <span>export</span>
                     </button>                    <a href="#">Contact</a>
                 </li>
             </ul>
@@ -149,7 +150,7 @@
                     </button>
 					
 
-		   	<canvas id = "c" width = "3000" height = "2000"></canvas>
+		   	<canvas id = "c" width = "1000" height = "600"></canvas>
 		   
 		   
 		   
@@ -170,17 +171,9 @@
         });
     </script>
 	
-
+    <script src="edit.js"></script>
            
-		   <script>
-		   var canvas = new fabric.Canvas('c');
-var rect = new fabric.Rect({left:100, top: 150, fill: 'red', width:200, height:200});
-	
-canvas.add(rect); // add object
-
-document.getElementById("clickMe").onclick = function () { alert('hello!'); };
-
-</script>
+		   
 	
 </body>
 
